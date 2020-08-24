@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="NN能学会乘法么？对于加法 a + b, 应该能学到 w &#x3D; 1, bias &#x3D; 0，去掉非线性。知乎也有人问过了。能学到一些 pattern。合理的建模能提高学到的水平 or 效率，算是加入了人工知识。精确性的数学符号推导和概率性的猜测推理如何结合？">
+  <meta name="description" content="先有模式、业务、产品，再有后端、算法、前端。都重要，但可能有先后。没想清楚业务模式，算法很难找到合适的问题。猜错了方向，即使有技术成果也可能会被说成无业务价值。可能找到其他应用场景，也可能就是自嗨。存在什么问题？可以解决什么问题？如何解决？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="what-can-nn-learn">
-<meta property="og:url" content="http://yoursite.com/2020/08/22/what-can-nn-learn/index.html">
+<meta property="og:title" content="find-the-right-problem">
+<meta property="og:url" content="http://yoursite.com/2020/08/24/find-the-right-problem/index.html">
 <meta property="og:site_name" content="银河">
-<meta property="og:description" content="NN能学会乘法么？对于加法 a + b, 应该能学到 w &#x3D; 1, bias &#x3D; 0，去掉非线性。知乎也有人问过了。能学到一些 pattern。合理的建模能提高学到的水平 or 效率，算是加入了人工知识。精确性的数学符号推导和概率性的猜测推理如何结合？">
+<meta property="og:description" content="先有模式、业务、产品，再有后端、算法、前端。都重要，但可能有先后。没想清楚业务模式，算法很难找到合适的问题。猜错了方向，即使有技术成果也可能会被说成无业务价值。可能找到其他应用场景，也可能就是自嗨。存在什么问题？可以解决什么问题？如何解决？">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-08-22T03:11:25.000Z">
-<meta property="article:modified_time" content="2020-08-22T03:15:56.078Z">
+<meta property="article:published_time" content="2020-08-24T14:29:55.000Z">
+<meta property="article:modified_time" content="2020-08-24T14:41:21.163Z">
 <meta property="article:author" content="Pismov">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/08/22/what-can-nn-learn/">
+<link rel="canonical" href="http://yoursite.com/2020/08/24/find-the-right-problem/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>what-can-nn-learn | 银河</title>
+  <title>find-the-right-problem | 银河</title>
   
 
 
@@ -151,7 +151,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/22/what-can-nn-learn/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/24/find-the-right-problem/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -164,7 +164,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          what-can-nn-learn
+          find-the-right-problem
         </h1>
 
         <div class="post-meta">
@@ -175,7 +175,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-08-22 11:11:25 / Modified: 11:15:56" itemprop="dateCreated datePublished" datetime="2020-08-22T11:11:25+08:00">2020-08-22</time>
+              <time title="Created: 2020-08-24 22:29:55 / Modified: 22:41:21" itemprop="dateCreated datePublished" datetime="2020-08-24T22:29:55+08:00">2020-08-24</time>
             </span>
 
           
@@ -189,7 +189,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>NN能学会乘法么？<br>对于加法 a + b, 应该能学到 w = 1, bias = 0，去掉非线性。<br>知乎也有人问过了。<br>能学到一些 pattern。合理的建模能提高学到的水平 or 效率，算是加入了人工知识。<br>精确性的数学符号推导和概率性的猜测推理如何结合？</p>
+        <p>先有模式、业务、产品，再有后端、算法、前端。都重要，但可能有先后。<br>没想清楚业务模式，算法很难找到合适的问题。猜错了方向，即使有技术成果也可能会被说成无业务价值。<br>可能找到其他应用场景，也可能就是自嗨。<br>存在什么问题？可以解决什么问题？如何解决？</p>
 
     </div>
 
@@ -205,13 +205,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/08/22/coming/" rel="prev" title="coming">
-      <i class="fa fa-chevron-left"></i> coming
+    <a href="/2020/08/23/walk-after-dinner/" rel="prev" title="walk-after-dinner">
+      <i class="fa fa-chevron-left"></i> walk-after-dinner
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/08/22/note-20200822/" rel="next" title="note-20200822">
-      note-20200822 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
